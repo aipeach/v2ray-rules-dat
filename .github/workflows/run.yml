@@ -164,9 +164,6 @@ jobs:
           curl -sSL $WIN_UPDATE | grep "0.0.0.0" | awk '{print $2}' > win-update.txt
           curl -sSL $WIN_EXTRA | grep "0.0.0.0" | awk '{print $2}' > ./community/data/win-extra
           curl -sSL $WIN_EXTRA | grep "0.0.0.0" | awk '{print $2}' > win-extra.txt
-
-      - name: GET Netflix520
-        run: |
           curl -sSL $NETFLIX520_DOMAINS_URL > ./community/data/netflix520
 
       - name: Build geosite.dat file
